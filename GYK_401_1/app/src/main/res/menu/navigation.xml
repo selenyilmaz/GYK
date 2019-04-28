@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_health"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="Health" />
+
+    <item
+        android:id="@+id/navigation_diet"
+        android:icon="@drawable/ic_room_service_black_24dp"
+        android:title="Diet" />
+    <item
+        android:id="@+id/navigation_exercise"
+        android:icon="@drawable/menu_gym"
+        android:title="Exercise"
+    />
+
+</menu>

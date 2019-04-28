@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@android:color/holo_red_light"
+                android:text="Kamera"
+                app:layout_constraintBaseline_toBaselineOf="@+id/ses"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/ses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@android:color/holo_orange_light"
+                android:text="Ses"
+                app:layout_constraintStart_toEndOf="@+id/kamera"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/harita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="Harita"
+                app:layout_constraintBaseline_toBaselineOf="@+id/web"
+                app:layout_constraintStart_toStartOf="@+id/kamera" />
+
+            <Button
+                android:id="@+id/web"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@android:color/holo_purple"
+                android:text="Web"
+                app:layout_constraintStart_toEndOf="@+id/harita"
+                app:layout_constraintTop_toBottomOf="@+id/ses" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:text="SMS"
+                app:layout_constraintBaseline_toBaselineOf="@+id/arama"
+                app:layout_constraintStart_toStartOf="@+id/harita" />
+
+            <Button
+                android:id="@+id/arama"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@android:color/holo_orange_dark"
+                android:text="Arama"
+                app:layout_constraintStart_toStartOf="@+id/web"
+                app:layout_constraintTop_toBottomOf="@+id/web" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
